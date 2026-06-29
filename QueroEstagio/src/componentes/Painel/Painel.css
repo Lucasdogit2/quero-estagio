@@ -1,0 +1,217 @@
+/* Paleta (variáveis) */
+:root {
+  --azul-petroleo: #2F4858;
+  --cinza-claro: #F5F6F7;
+  --cinza-medio: #9AA0A6;
+  --verde-suave: #6CA38C;
+  --dourado-suave: #D4A373;
+  --branco: #FFFFFF;
+  --texto-escuro: #1E2A2F;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.painel-body {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  background: var(--cinza-claro);
+  color: var(--texto-escuro);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--azul-petroleo);
+  color: var(--branco);
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.logo-square {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--verde-suave), var(--dourado-suave));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.menu-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-panel {
+  position: absolute;
+  top: 64px;
+  right: 20px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 8px 30px rgba(12,22,26,0.12);
+  z-index: 10;
+}
+
+.menu-panel a {
+  display: block;
+  padding: 8px 6px;
+  color: var(--azul-petroleo);
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.menu-panel a:hover {
+  background: #F3F6F7;
+}
+
+footer {
+  background: var(--azul-petroleo);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  margin-top: 40px;
+}
+
+footer small {
+  display: block;
+  color: rgba(255,255,255,0.85);
+  margin-top: 6px;
+  font-size: 0.85rem;
+}
+
+.mascot {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 2rem;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* VERSÃO 1 – FORMAL */
+.version1 h2 {
+  color: var(--azul-petroleo);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.version1 .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.version1 .card {
+  background: white;
+  padding: 40px;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.version1 .card:hover {
+  transform: translateY(-5px);
+}
+
+.version1 .card i {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+  color: var(--verde-suave);
+  font-style: normal;
+}
+
+.version1 .about {
+  background: white;
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* VERSÃO 2 – MODERNA */
+.version2 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.version2 .hero button {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px 28px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.version2 .hero .btn-search {
+  background: var(--verde-suave);
+  color: white;
+}
+
+.version2 .hero .btn-search:hover {
+  background: #5a8f77;
+}
+
+.version2 .hero .btn-my {
+  background: var(--dourado-suave);
+  color: white;
+}
+
+.version2 .hero .btn-my:hover {
+  background: #b97f4e;
+}
+
+.version2 .about {
+  background: white;
+  padding: 50px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.version2 .about h2 {
+  color: var(--azul-petroleo);
+  margin-bottom: 16px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--cinza-medio);
+  margin: 40px 0;
+  opacity: 0.3;
+}
